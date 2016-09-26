@@ -36,7 +36,7 @@ func (t *Timer) siftup(i int) {
 func (t *Timer) siftdown(i int) {
 	h := t.heap
 	v := h[i]
-	n := (len(h) + 3) / 4
+	n := (len(h) + 2) / 4
 	for i < n {
 		b := 4*i + 1
 		min := b
